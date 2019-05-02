@@ -1,9 +1,7 @@
 #Neighbourhood
-library(questionr) #we load the needed extensions
-
-#import of the dataset
+library(questionr) 
 paris.airbnb.listings <- read.csv("~/Desktop/Computer Science/Engineering School/2018-2019/S2/AirBnB_Analysis/paris-airbnb-listings.csv", header=TRUE, sep=";")
-View(paris.airbnb.listings) #visualization of the array
+View(paris.airbnb.listings)
 
 neigh <- table(paris.airbnb.listings$Neighbourhood)
 sort(neigh) #trie selon la valeur de l'effectif
